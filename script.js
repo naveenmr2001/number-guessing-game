@@ -129,10 +129,10 @@ const medium = () =>{
         arrow[1].style.display = 'grid';
         computer[1].placeholder = computer_guess
         flag = true;
-        if(turn == 3){
-            score+=300;
+        if(turn<=3){
+            score+=500;
         }else{
-            score+=100;
+            score+=300;
         }
         score_value[1].innerHTML = score;
         for(let i=0;i<turn;i++){
@@ -173,10 +173,10 @@ const high = () =>{
         guessbutton[2].style.cursor = 'arrow';
         computer[2].placeholder = computer_guess
         flag = true;
-        if(turn == 3){
-            score+=300;
+        if(turn <= 5){
+            score+=700;
         }else{
-            score+=100;
+            score+=500;
         }
         score_value[2].innerHTML = score;
     }else if(valuehigh<computer_guess){
