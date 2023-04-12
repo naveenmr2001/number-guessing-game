@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@500&display=swap');
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    display:grid;
+    grid-template-columns: repeat(3,100%);
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    background: #4568DC;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #B06AB3, #4568DC);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #B06AB3, #4568DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+.main-container{
+    position: relative;
+    width:100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    gap:10px;
+}
+
+
+.main-container-header{
+    font-family: 'Anuphan', sans-serif;
+    font-size:2rem;
+    font-weight: bold;
+}
+
+.main-container .life{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height:2rem;
+    gap:0.5rem;
+}
+
+.main-container .diffcuity{
+    font-family: 'Anuphan', sans-serif;
+    font-size:1.5rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.3rem;
+    margin-left: 0.5rem;
+}
+
+.main-container-low{
+    position: relative;
+    width:28rem;
+    height:25rem;
+    background: #C9D6FF;  
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.25);
+    background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF);  
+    background: linear-gradient(to right, #E2E2E2, #C9D6FF); 
+    border-radius: 0.5rem;
+}
+
+.main-container-low > .user-input input{
+    position: absolute;
+    left:3.3rem;
+    top: 27%;
+    width:5rem;
+    height:5rem;
+    border-radius: 0.3rem;
+    border: 1px solid white;
+}
+
+.main-container-low > .user-input input[type="text"]{
+    font-size:2.1rem;
+    text-align: center;
+}
+
+.main-container-low > .user-input input::placeholder{
+    font-weight:bold;
+}
+
+.main-container-low > .user-input input::placeholder:hover{
+    display: none;
+}
+
+.main-container-low > .computer-input input{
+    position: absolute;
+    left:19.3rem;
+    top: 27%;
+    width:5rem;
+    height:5rem;
+    border-radius: 0.3rem;
+    border: 1px solid white;
+}
+
+.main-container-low > .computer-input input[type="text"]{
+    font-size:2.1rem;
+    text-align: center;
+}
+
+.main-container .symbol{
+    position: absolute;
+    left:11.9rem;
+    top: 27%;
+    width: 5rem;
+    height:5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.main-container .symbol .greater{
+    font-size:4.1rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.main-container .user-visual{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:0.5rem;
+    font-size:1.5rem;
+    font-weight: bold;
+    font-family: 'Anuphan', sans-serif;
+}
+
+.main-container .congrulation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:0.5rem;
+    font-size:1.5rem;
+    font-weight: bold;
+    font-family: 'Anuphan', sans-serif;
+}
+
+.main-container .next-level{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:0.5rem;
+    font-size:1.5rem;
+    font-weight: bold;
+    font-family: 'Anuphan', sans-serif;
+}
+
+.main-container-low .play{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container-low .play > button{
+    margin-top:0.5rem;
+    text-align: center;
+    width:11rem;
+    height:2rem;
+    background-color:black;
+    color:white;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: 'Anuphan', sans-serif;
+    cursor: pointer;
+}
+
+.main-container-low .play > button:hover{
+    font-weight: bold;
+    font-family: 'Anuphan', sans-serif;
+    cursor: pointer;
+    background-color:white;
+    color:black;
+}
+
+.main-container-low .guess{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container-low .guess > button{
+    margin-top:8.5rem;
+    text-align: center;
+    width:11rem;
+    height:2rem;
+    background-color:black;
+    color:white;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: 'Anuphan', sans-serif;
+    cursor: pointer;
+}
+
+.main-container-low .guess > button:hover{
+    background-color:white;
+    color:black;
+}
+
+.main-container .score,.score-div{
+    margin-left:0.5rem;
+    font-family: 'Anuphan', sans-serif;
+    font-weight:bold;
+}
+
+.arrow{
+    display:grid;
+    grid-template-columns: repeat(3,100%);
+    position: absolute;
+    left:79rem;
+    top:18rem;
+    width:2.7rem;
+    height:5rem;
+}
+
+.arrow .arrow-button{
+    width:2.7rem;
+    height: 5rem;
+    border:none;
+    border-radius: 5px;
+}
+
+.arrow-2{
+    display:grid;
+    grid-template-columns: repeat(3,100%);
+    position: absolute;
+    left:79rem;
+    top:18rem;
+    width:2.7rem;
+    height:5rem;
+}
+
+.arrow-2 .arrow-button-2{
+    width:2.7rem;
+    height: 5rem;
+    border:none;
+    border-radius: 5px;
+}
