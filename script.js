@@ -102,7 +102,7 @@ const low = () =>{
     let d_nested = document.getElementsByClassName("fa");
     life[0].removeChild(d_nested[0])
     score_value[0].innerHTML = score;
-    if(turn==0){
+    if(turn==0 && flag == false){
         congrulation[0].innerHTML = "TRY AGAIN";
         congrulation[0].style.display = "flex";
         play[0].style.display = "flex";
@@ -148,7 +148,7 @@ const medium = () =>{
     console.log(d_nested)
     life[1].removeChild(d_nested[0])
     score_value[1].innerHTML = score;
-    if(turn==0){
+    if(turn==0 && flag == false){
         congrulation[1].innerHTML = "TRY AGAIN";
         congrulation[1].style.display = "flex";
         play[1].style.display = "flex";
@@ -187,7 +187,7 @@ const high = () =>{
     let d_nested = document.getElementsByClassName("fa");
     life[2].removeChild(d_nested[0])
     score_value[2].innerHTML = score;
-    if(turn==0){
+    if(turn==0 && flag == false){
         congrulation[2].innerHTML = "TRY AGAIN";
         congrulation[2].style.display = "flex";
         play[2].style.display = "flex";
